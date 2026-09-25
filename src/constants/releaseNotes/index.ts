@@ -3,6 +3,13 @@ import type { TReleaseNote } from "src/types";
 //! ترتیب مهمه - جدیدترین ورژن ابتدا قرار میگیره
 export const RELEASE_NOTES: TReleaseNote[] = [
 	{
+		version: "4.9.7",
+		changes: {
+			fa: ["اصلاح و بهبود نمایش خطای نمایش تقویم در زبان انگلیسی"],
+			en: ["Improve and refine calendar rendering error display in English"],
+		},
+	},
+	{
 		version: "4.9.6",
 		changes: {
 			fa: ["رفع باگ نمایش تنظیمات هفته"],

@@ -45,10 +45,7 @@ export default class CalendarRenderer {
 
 		containerEl.classList.add("persian-calendar", "persian-calendar__calendar");
 
-		containerEl.setAttribute(
-			"dir",
-			this.setting.language === "fa" ? "rtl" : "ltr",
-		);
+		containerEl.setAttribute("dir", this.setting.language === "fa" ? "rtl" : "ltr");
 
 		safeRender(containerEl, "header", () => {
 			this.headerRenderer.render(containerEl);
@@ -56,10 +53,7 @@ export default class CalendarRenderer {
 
 		if (this.setting.showSeasonalNotes) {
 			safeRender(containerEl, "seasonalNotes", () => {
-				this.bodyRenderer.renderSeasonalNotesRow(
-					containerEl,
-					this.setting.language,
-				);
+				this.bodyRenderer.renderSeasonalNotesRow(containerEl, this.setting.language);
 			});
 		}
 
